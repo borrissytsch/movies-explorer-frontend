@@ -1,0 +1,8 @@
+.techs__subtitle {
+  margin: calc(var(--techs_subtitle_topmrg)*1px) auto;
+  max-width: calc(var(--techs_subtitle_len)*1px);
+  text-align: center;
+  font-size: calc(var(--project_text_fnsize_p)*1px);
+  line-height: calc(var(--project_text_lnhght_p)*1px);
+  letter-spacing: calc(var(--project_text_fnsize_p)*var(--project_title_letter_f)*1px);
+}

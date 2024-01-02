@@ -1,0 +1,13 @@
+.regform__button {
+  margin-top: calc(var(--regform_btn_topmrg)*1px);
+  height: calc(var(--regform_btn_height)*1px);
+  font-size: calc(var(--regform_fld_fnsize_p)*1px);
+  line-height: calc(var(--regform_fld_lnhght_p)*1px);
+  font-weight: var(--default_head_fnwght);
+  color: var(--default_color);
+  background-color: var(--regform_btn_backcolor);
+  border-radius: calc(var(--regform_btn_raduis)*1px);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

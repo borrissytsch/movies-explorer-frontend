@@ -1,0 +1,12 @@
+.aboutproject__item_theme_dull {
+  padding-top: calc(var(--project_caption_topmrg)*1px);
+  font-weight: var(--default_head_fnwght);
+  color: var(--project_caption_color);
+}
+
+@media screen and (max-width: 320px) {
+  .aboutproject__item_theme_dull {
+    padding-top: 0;
+    font-weight: var(--default_text_fnwght);
+  }
+}

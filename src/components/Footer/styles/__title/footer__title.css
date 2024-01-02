@@ -1,0 +1,9 @@
+.footer__title {
+  margin: 0;
+  padding-top: calc(var(--footer_topmrg)*1px);
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  color: var(--project_caption_color);
+  text-align: center;
+}

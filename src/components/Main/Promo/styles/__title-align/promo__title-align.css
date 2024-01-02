@@ -1,0 +1,9 @@
+.promo__title-align {
+  margin-left: calc(var(--promo_title_firight)*1px);
+}
+
+@media screen and (max-width: 1279px) {
+  .promo__title-align {
+    margin: 0;
+  }
+}

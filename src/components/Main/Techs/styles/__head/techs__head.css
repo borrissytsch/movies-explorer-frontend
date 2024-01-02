@@ -1,0 +1,8 @@
+.techs__head {
+  margin: calc(var(--techs_title_topmrg)*1px) 0 0;
+  text-align: center;
+  font-size: calc(var(--techs_title_fnsize_p)*1px);
+  line-height: calc(var(--techs_title_lnhght_p)*1px);
+  letter-spacing: calc(var(--promo_title_fnsize_p)*var(--techs_title_letter_f)*1px);
+  font-weight: var(--default_text_fnwght);
+}

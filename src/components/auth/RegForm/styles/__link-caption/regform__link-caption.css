@@ -1,0 +1,4 @@
+.regform__link-caption {
+  padding-right: calc(var(--regform_lnk_fitgap)*1px);
+  color: var(--project_caption_color);
+}

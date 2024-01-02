@@ -1,0 +1,7 @@
+.burger__profile-img {
+  width: calc(var(--burger_profile_width)*1px);
+  height:calc(var(--burger_profile_height)*1px);
+  aspect-ratio: var(--header_profile_aspect);
+  object-fit: cover;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.08);
+}

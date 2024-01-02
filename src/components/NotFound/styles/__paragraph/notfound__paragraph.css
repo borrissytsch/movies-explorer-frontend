@@ -1,0 +1,6 @@
+.notfound__paragraph {
+  margin: calc(var(--notfound_prg_topmrg)*1px) 0 0;
+  font-size: calc(var(--notfound_prg_fnsize_p)*1px);
+  line-height: calc(var(--notfound_prg_lnhght_p)*1px);
+  font-weight: inherit;
+}

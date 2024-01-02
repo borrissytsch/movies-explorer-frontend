@@ -1,0 +1,7 @@
+.portfolio__title {
+  margin: 0;
+  font-size: calc(var(--portfolio_title_fnsize_p)*1px);
+  line-height: calc(var(--portfolio_title_lnhght_p)*1px);
+  font-weight: var(--default_text_fnwght);
+  color: var(--portfolio_title_color);
+}

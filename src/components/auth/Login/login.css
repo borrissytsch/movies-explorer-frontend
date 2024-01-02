@@ -1,0 +1,16 @@
+.login {
+  padding-top: calc(var(--register_top)*1px);
+  background-color: var(--project_back_color);
+}
+
+@media screen and (max-width: 1279px) {
+  .login {
+    padding-top: calc((var(--page_width)*1px - 100vw)*(var(--register_top_tgt768) - var(--register_top))/(var(--page_width) - 968) + var(--register_top)*1px);
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .login {
+    padding-top: calc(var(--register_top)*1px);
+  }
+}

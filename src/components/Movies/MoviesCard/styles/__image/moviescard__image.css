@@ -1,0 +1,6 @@
+.moviescard__image {
+  max-width: calc(var(--card_img_width)*1px);
+  height: calc(var(--card_img_height)*1px);
+  aspect-ratio: var(--card_aspect);
+  /*border: 1px solid;*/
+}

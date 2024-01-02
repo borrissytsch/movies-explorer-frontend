@@ -1,0 +1,4 @@
+.aboutproject__title {
+  padding-bottom: calc(var(--project_line_topmrg)*1px);
+  border-bottom: 1px solid var(--project_line_color);
+}
