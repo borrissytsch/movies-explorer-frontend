@@ -1,0 +1,7 @@
+.portfolio__link {
+  max-width: calc(var(--portfolio_link_width)*1px);
+  line-height: calc(var(--portfolio_link_height)*1px);
+  letter-spacing: calc(var(--portfolio_item_fnsize_p)*var(--project_title_letter_f)*1px);
+  color: var(--default_color);
+  text-decoration: none;
+}

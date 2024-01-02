@@ -1,0 +1,6 @@
+.regform__title {
+  margin: calc(var(--regform_topmrg)*1px) 0 calc(var(--regform_title_bot)*1px);
+  font-size: calc(var(--form_title_fnsize_p)*1px);
+  line-height: calc(var(--form_title_lnhght_p)*1px);
+  font-weight: var(--default_head_fnwght);
+}

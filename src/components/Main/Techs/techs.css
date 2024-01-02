@@ -1,0 +1,5 @@
+.techs {
+  padding-top: calc(var(--techs_top)*1px);
+  padding-bottom: calc(var(--techs_bot)*1px);
+  background-color: var(--techs_back_color);
+}

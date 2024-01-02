@@ -1,0 +1,4 @@
+.moviescard__button_type_unsaved {
+  background-color: var(--card_btn_unsavecolor);
+  box-shadow: 0px 3px 6px 0px #00000017;
+}

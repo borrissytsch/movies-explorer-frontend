@@ -1,0 +1,13 @@
+.regform__label {
+  margin-bottom: calc(var(--regform_input_botmrg)*1px);
+  display: flex;
+  flex-direction: inherit;
+  font-size: calc(var(--form_label_fnsize_p)*1px);
+  line-height: calc(var(--form_label_lnhght_p)*1px);
+  font-weight: calc(var(--default_text_fnwght)*1px);
+  color: var(--project_caption_color);
+}
+
+.regform__label:last-of-type {
+  padding-bottom: 0;
+}

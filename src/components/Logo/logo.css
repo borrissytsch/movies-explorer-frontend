@@ -1,0 +1,21 @@
+.logo {
+  margin-top: calc(var(--logo_top)*1px);
+  max-width: calc(var(--logo_size)*1px);
+  height:calc(var(--logo_size)*1px);
+  aspect-ratio: var(--logo_aspect);
+}
+
+.logo_notlogged {
+  margin-right: auto;
+}
+
+.logo_type_form {
+  margin-left: calc((100% - var(--regform_width)*1px)/2);
+}
+
+@media screen and (max-width: 562px) {
+  .logo_notlogged.logo_type_form  {
+    margin: 0 auto;
+    display: block;
+  }
+}

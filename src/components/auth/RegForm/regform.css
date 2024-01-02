@@ -1,0 +1,29 @@
+.regform {
+  margin: 0 auto;
+  padding-bottom: 50%;
+  width: calc(var(--regform_width)*1px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.regform_type_profile {
+  margin-top: calc(var(--profile_top)*1px);
+  align-items: center;
+}
+
+@media screen and (max-width: 1279px) {
+  .regform_type_profile {
+    padding-top: calc((var(--page_width)*1px - 100vw)*(var(--profile_top_tgt768) - var(--profile_top))/(var(--page_width) - 968) + var(--profile_top)*1px);
+  }
+}
+
+@media screen and (max-width: 562px) {
+  .regform {
+    align-items: center;
+  }
+
+  .regform_type_profile {
+    padding-top: 0;
+  }
+}

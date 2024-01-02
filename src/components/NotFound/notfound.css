@@ -1,0 +1,9 @@
+.notfound {
+  padding: 1px calc(var(--default_section_left)*1px) 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: var(--default_text_fnwght);
+  background-color: var(--project_back_color);
+}

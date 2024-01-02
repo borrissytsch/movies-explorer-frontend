@@ -1,0 +1,9 @@
+.aboutproject__diag {
+  margin-top: calc(var(--project_diag_topmrg)*1px);
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: var(--project_diag_back) var(--project_diag_front);
+  grid-template-rows: calc(var(--project_item_height)*1px);
+  text-align: center;
+}

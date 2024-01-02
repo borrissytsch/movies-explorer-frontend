@@ -1,0 +1,13 @@
+.promo__head {
+  margin-top: calc(var(--promo_title_fitop)*1px);
+  display: flex;
+  flex-direction: column;
+  row-gap: calc(var(--promo_head_gap)*1px);
+  justify-content: left;
+}
+
+@media screen and (max-width: 968px) {
+  .promo__head {
+    align-items: inherit;
+  }
+}

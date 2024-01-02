@@ -1,0 +1,12 @@
+@media screen and (max-width: 1154px) {
+  .techs__bounds {
+    margin-left: calc(var(--about_left)*1px);
+    margin-right: calc(var(--about_left)*1px);
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .techs__bounds {
+    margin-right: calc(var(--about_left)*1px);
+  }
+}

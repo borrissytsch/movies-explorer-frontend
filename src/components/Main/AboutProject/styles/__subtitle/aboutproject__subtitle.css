@@ -1,0 +1,15 @@
+.aboutproject__subtitle {
+  margin: 0;
+  line-height: calc(var(--project_subtitle_lnhght_p)*1px);
+  font-weight: var(--default_text_fnwght);
+}
+
+@media screen and  (max-width: 320px) {
+  .aboutproject__subtitle {
+    letter-spacing: calc(var(--project_title_fnsize_p)*var(--project_subtitle_letter_f)*1px);
+  }
+  
+  .aboutproject__subtitle:last-of-type {
+    margin-top: 48px;
+  }
+}

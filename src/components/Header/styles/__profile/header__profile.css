@@ -1,0 +1,23 @@
+.header__profile {
+  margin-top: calc(var(--header_profile_top)*1px);
+  max-width: calc(var(--header_profile_width)*1px);
+  height:calc(var(--header_profile_height)*1px);
+  border: none;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .header__profile {
+    background-image: var(--header_burger);
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+}
+
+/*@media screen and (max-width: 320px) {
+  .header__profile {
+    background-position: right;
+  }
+}*/

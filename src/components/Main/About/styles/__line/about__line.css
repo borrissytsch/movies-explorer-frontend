@@ -1,0 +1,4 @@
+.about__line {
+  border-bottom: 1px solid var(--project_line_color);
+  box-sizing: border-box;
+}

@@ -1,0 +1,17 @@
+.techs__list {
+  margin-top: calc(var(--techs_list_topmrg)*1px);
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  column-gap: calc(var(--techs_col_gap)*1px);
+}
+
+@media screen and  (max-width: 562px) {
+  .techs__list {
+    margin-left: calc(var(--techs_left)*1px);
+    margin-right: calc(var(--techs_left)*1px);
+    flex-wrap: wrap;
+    gap: calc(var(--techs_col_gap)*1px);
+  }
+}

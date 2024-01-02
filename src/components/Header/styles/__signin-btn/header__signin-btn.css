@@ -1,0 +1,22 @@
+.header__signin-btn {
+  margin-top: calc(var(--header_btn_top)*1px);
+  width: calc(var(--header_btn_width)*1px);
+  height: calc(var(--header_btn_height)*1px);
+  font-size: calc(var(--promo_btn_fnsize_p)*1px);
+  line-height: calc(var(--promo_subtitle_lnhght_p)*1px);
+  background-color: var(--header_btn_backcolor);
+  cursor: pointer;
+}
+
+@media screen and  (max-width: 562px) {
+  .header__signin-btn {
+    font-size: calc(var(--header_fnsize_p)*1px);
+    line-height: calc(var(--header_lnhght_p)*1px);
+    }
+}
+
+@media screen and  (max-width: 320px) {
+  .header__signin-btn {
+    font-weight: var(--default_head_fnwght);
+  }
+}

@@ -1,0 +1,10 @@
+.burger__profile {
+  margin-top: auto;
+  margin-bottom: calc(var(--burger_bot)*1px);
+  width: calc(var(--burger_profile_width)*1px);
+  height:calc(var(--burger_profile_height)*1px);
+  border: none;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer;  
+}

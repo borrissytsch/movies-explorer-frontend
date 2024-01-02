@@ -1,0 +1,12 @@
+.filtercheckbox__label {
+  font-size: calc(var(--filter_label_fnsize_p)*1px);
+  line-height: calc(var(--filter_label_lnhght_p)*1px);
+  font-weight: var(--default_text_fnwght);
+}
+
+@media screen and (max-width: 768px) {
+  .filtercheckbox__label {
+    padding-left: 4px;
+    order: -1;
+  }
+}

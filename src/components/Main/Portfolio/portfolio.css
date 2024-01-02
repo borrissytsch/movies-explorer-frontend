@@ -1,0 +1,4 @@
+.portfolio {
+  margin-top: calc(var(--portfolio_top_mrg)*1px);
+  padding-bottom: calc(var(--portfolio_bot_mrg)*1px);
+}
