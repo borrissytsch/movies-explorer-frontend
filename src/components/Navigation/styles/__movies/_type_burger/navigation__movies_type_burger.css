@@ -1,4 +1,0 @@
-.navigation__movies_type_burger {
-  flex-direction: column;
-  gap: calc(var(--burger_nav_gap)*1px);
-}

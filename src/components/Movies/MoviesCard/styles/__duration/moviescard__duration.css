@@ -1,6 +1,0 @@
-.moviescard__duration {
-  margin: calc(var(--card_duration_top)*1px) calc(var(--card_title_left)*1px) 0;
-  font-size: calc(var(--card_duration_fnsize_p)*1px);
-  line-height: calc(var(--card_duration_lnhght_p)*1px);
-  font-weight: var(--default_head_fnwght);
-}

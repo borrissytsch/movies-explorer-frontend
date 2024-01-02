@@ -1,3 +1,0 @@
-.footer__list_type_notlined {
-  margin-top: calc((var(--footer_list_topmrg) - var(--footer_line_topmrg) - 8)*1px);
-}

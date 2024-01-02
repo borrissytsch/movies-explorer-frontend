@@ -1,5 +1,0 @@
-.regform__items_type_profile {
-    width: calc(var(--regform_profile_width)*1px);
-    font-size: calc(var(--profile_fld_fnsize_p)*1px);
-    line-height: calc(var(--profile_fld_lnhght_p)*1px);
-}

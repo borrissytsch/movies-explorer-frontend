@@ -1,9 +1,0 @@
-.searchform__input {
-  font-size: calc(var(--search_input_fnsize_p)*1px);
-  line-height: calc(var(--search_input_lnhght_p)*1px);
-  font-weight: var(--default_head_fnwght);
-  color: var(--project_caption_color);
-  background-color: inherit;
-  border: none;
-  outline: none;
-}

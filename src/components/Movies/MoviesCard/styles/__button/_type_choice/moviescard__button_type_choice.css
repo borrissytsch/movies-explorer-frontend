@@ -1,6 +1,0 @@
-.moviescard__button_type_choice {
-  border-radius: calc(var(--card_btn_radius)*1px);
-  box-sizing: border-box;
-  border: 2px solid var(--default_color);
-  
-}

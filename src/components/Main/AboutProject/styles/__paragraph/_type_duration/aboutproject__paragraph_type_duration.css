@@ -1,5 +1,0 @@
-@media screen and (max-width: 562px) {
-  .aboutproject__paragraph_type_duration {
-    order: var(--project_duration_flexord);
-  }
-}

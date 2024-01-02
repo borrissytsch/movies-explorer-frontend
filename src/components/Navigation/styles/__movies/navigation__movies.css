@@ -1,4 +1,0 @@
-.navigation__movies {
-  display: flex;
-  column-gap: calc(var(--navigation_gap)*1px);
-}

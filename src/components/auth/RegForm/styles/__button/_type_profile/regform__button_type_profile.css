@@ -1,7 +1,0 @@
-.regform__button_type_profile {
-  margin-top: calc((var(--regform_btn_topmrg) + var(--profile_btn_topfit))*1px);
-  font-size: calc(var(--profile_btn_fnsize_p)*1px);
-  line-height: calc(var(--profile_btn_lnhght_p)*1px);
-  font-weight: var(--default_text_fnwght);
-  background-color: inherit;
-}

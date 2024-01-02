@@ -1,5 +1,0 @@
-@media screen and (max-width: 562px) {
-  .aboutproject__subtitle_type_stage {
-    order: var(--project_stage_flexord);
-  }
-}

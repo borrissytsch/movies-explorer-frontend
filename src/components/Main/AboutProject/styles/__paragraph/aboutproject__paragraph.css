@@ -1,5 +1,0 @@
-.aboutproject__paragraph {
-  margin-top: calc(var(--project_paragraph_topmrg)*1px);
-  font-size: calc(var(--project_text_fnsize_p)*1px);
-  line-height: calc(var(--project_text_lnhght_p)*1px);
-}

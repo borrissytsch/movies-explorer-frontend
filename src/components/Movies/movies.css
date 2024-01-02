@@ -1,8 +1,0 @@
-.movies {
-  padding-top: calc(var(--movies_top)*1px);
-  max-width: inherit;
-  background-color: var(--movies_back_color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}

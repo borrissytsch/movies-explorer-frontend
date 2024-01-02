@@ -1,5 +1,0 @@
-.footer__line {
-  margin-top: calc(var(--footer_line_topmrg)*1px);
-  border: 1px solid var(--footer_line_color);
-  box-sizing: border-box;
-}

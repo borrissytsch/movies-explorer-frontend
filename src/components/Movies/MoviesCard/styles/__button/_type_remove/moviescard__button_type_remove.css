@@ -1,7 +1,0 @@
-.moviescard__button_type_remove {
-  background-image: var(--savedmovie_btn_remove);
-  background-position: center;
-  border: none;
-  outline: none;
-  background-color: inherit;
-}

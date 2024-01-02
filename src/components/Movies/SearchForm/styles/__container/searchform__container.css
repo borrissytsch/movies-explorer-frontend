@@ -1,7 +1,0 @@
-.searchform__container {
-  margin-bottom: calc(var(--search_align_bot)*1px);
-  padding-bottom: calc(var(--search_line_bot)*1px);
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--portfolio_line_color);
-}

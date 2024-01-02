@@ -1,3 +1,0 @@
-.regform__button_type_register {
-  margin-top: calc((var(--regform_btn_topmrg) - var(--register_btn_topfit))*1px);
-}

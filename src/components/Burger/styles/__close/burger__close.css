@@ -1,9 +1,0 @@
-.burger__close {
-  margin: calc(var(--burger_top)*1px) calc(var(--burger_right)*1px) calc(var(--burger_close_botmrg)*1px);
-  padding: 0;
-  width: calc(var(--burger_close_size)*1.4142px);
-  height: calc(var(--burger_close_size)*1.4142px);
-  background-color: var(--burger_back_color);
-  align-self: flex-end;
-  border: none;
-}
