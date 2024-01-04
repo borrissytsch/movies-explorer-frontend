@@ -4,7 +4,7 @@
   justify-content: space-between;
 }
 
-@media screen and  (max-width: 320px) {
+@media screen and  (max-width: 562px) {
   .aboutme__descr {
     margin-top: calc(var(--author_title_align)*1px);
     justify-content: flex-start

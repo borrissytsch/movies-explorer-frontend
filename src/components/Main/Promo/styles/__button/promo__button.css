@@ -8,25 +8,12 @@
   font-weight: var(--default_head_fnwght);
   color: var(--default_color);
   background-color: var(--default_back_color);
-  /*background-image: var(--cousteau_back_image);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: calc(var(--cousteau_plus_size)*1px) calc(var(--cousteau_plus_size)*1px);
-  padding: 0;
-  */
   cursor: pointer;
 }
 
 .promo__button:hover {
   opacity: var(--promo_btn_opacity);
 }
-/*
-@media screen and (max-width: 844px) {
-  .promo__button {
-    margin-top: calc(var(--cousteau_align_gap)*1px);
-    margin-left: calc((var(--default_section_left) - var(--cousteau_left) + var(--cousteau_align_left))*1px);
-  }
-}*/
 
 @media screen and (max-width: 320px) {
   .promo__button {

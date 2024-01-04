@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { LoggedInContext } from '../../contexts/LoggedInContext';
-import imgHeaderLogo from '../../images/header/logo.png';
+import imgHeaderLogo from '../../images/header/logo.svg';
 
 export default function Logo({logo = 'logo', formType = false}) {
   const [loggedIn, setLoggedIn] = useContext(LoggedInContext);

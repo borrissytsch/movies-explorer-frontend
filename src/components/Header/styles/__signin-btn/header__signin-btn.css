@@ -2,6 +2,9 @@
   margin-top: calc(var(--header_btn_top)*1px);
   width: calc(var(--header_btn_width)*1px);
   height: calc(var(--header_btn_height)*1px);
+  border-radius: calc(var(--header_btn_radius)*1px);
+  border: none;
+  outline: none;
   font-size: calc(var(--promo_btn_fnsize_p)*1px);
   line-height: calc(var(--promo_subtitle_lnhght_p)*1px);
   background-color: var(--header_btn_backcolor);

@@ -1,6 +1,6 @@
 .regform {
   margin: 0 auto;
-  padding-bottom: 50%;
+  padding-bottom: 100%;
   width: calc(var(--regform_width)*1px);
   display: flex;
   flex-direction: column;

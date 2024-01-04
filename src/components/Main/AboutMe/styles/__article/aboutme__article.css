@@ -5,7 +5,7 @@
   justify-content: space-between;
 }
 
-@media screen and  (max-width: 322px) {
+@media screen and  (max-width: 562px) {
   .aboutme__article {
     flex-direction: column;
     justify-content: flex-start;

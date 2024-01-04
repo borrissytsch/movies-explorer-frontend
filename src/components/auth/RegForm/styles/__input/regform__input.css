@@ -12,6 +12,12 @@
   background-color: var(--regform_fld_backcolor);
 }
 
+.regform__input:focus {
+  border: 2px solid var(--footer_line_color);
+  box-sizing: border-box;
+  background-color: var(--regform_fld_backcolor);
+}
+
 .regform__input:user-valid {
   box-sizing: border-box;
   outline: 1px dashed #202020;

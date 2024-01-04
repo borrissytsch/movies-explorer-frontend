@@ -2,9 +2,10 @@
   /* For local debugging add ../../ to all backimage urls (for black_heart_icon:  ../../../), these are paths 4 webpack */
   --search_btn_img: url(../../images/components/movies/find_btn.png);
   --filter_checkbox_img: url(../../images/components/movies/checkbox.png);
+  --filter_checkbox_gray: url(../../images/components/movies/checkbox_gray.png);
   --filter_checkbox_toggle: url(../../images/components/movies/checkbox_toggle.png);
   --savedmovie_btn_remove: url(../../images/components/movies/close_save_btn.png);
-  --header_burger: url(../../images/header/burger.png);
+  --header_burger: url(../../images/header/burger.svg);
   /* ---------------------------- General config ---------------------------- */
   --page_width: 1280;
   --default_section_left: 70;
@@ -87,6 +88,7 @@
   --header_btn_top: 19;
   --header_btn_width: 77;
   --header_btn_height: 36;
+  --header_btn_radius: 3;
   --header_btn_backcolor: #3DDC84;
   --navigation_top: 27;
   --navigation_left: 64;
@@ -169,6 +171,7 @@
   --author_article_topmrg: calc(var(--author_article_top) - var(--author_line_top));
   --author_image_width: 270;
   --author_image_height: 327;
+  --author_image_radius: 10;
   --author_img_aspect: var(--author_image_width)/var(--author_image_height);
   --author_subtitle_top: 292;
   --author_subtitle_topmrg: calc(var(--author_subtitle_top) - var(--author_article_top) - var(--promo_title_lnhght_p));
@@ -193,8 +196,11 @@
   --search_align_bot: -2;
   --search_height: 217;
   --search_back_color: var(--author_back_color);
+  --search_fld_width: calc(var(--page_width) - var(--search_btn_width) - var(--default_section_left)*2);
+  --search_btn_width: 80;
   --search_btn_size: 34;
   --search_btn_aspect: 1/1;
+  --search_btn_hoverln: 3;
   --search_line_top: 115;
   --search_line_bot: calc(var(--search_line_top) - var(--search_top) - var(--search_input_lnhght_p));
   --filter_top: 149;
@@ -291,8 +297,6 @@
   --notfound_prg_topmrg: calc(var(--notfound_prg_top) - var(--notfound_title_top) - var(--notfound_title_lnhght_p));
   --notfound_btn_top: 622;
   --notfound_btn_topmrg: calc(var(--notfound_btn_top) - var(--notfound_prg_top) - var(--notfound_prg_lnhght_p));
-  /*--tooltip_image_top: 60;
-  --tooltip_title_top: 212;*/
   /* ---------------------------- Form's errors config ---------------------------- */
   --input_last_top: 198;
   --input_error_top: 254;
@@ -307,9 +311,11 @@
     --main_left: calc((50vw + (var(--page_width)/2 - 968)*1px)/(var(--page_width) - 968)*var(--default_section_left));
     --header_left: var(--main_left);
     --header_right: calc((1px + (300vw - 3*968px)/(var(--page_width) - 968))*var(--default_section_left)/2);
+    --techs_item_widthtgt768: 84;
+    --card_width_tgt768: 339;
     --footer_left: var(--header_left);
     --footer_right: var(--header_right);
-    /* ---------------------------- Components media queries ---------------------------- */
+    /* ---------------------------- Components media queries 1279 ---------------------------- */
     --register_top_tgt768: 232;
     --profile_top_tgt768: 196;
     --notfound_top_tgt768: 408;
@@ -327,7 +333,6 @@
     --author_subtitle_fnsize_p: 16;
     --portfolio_title_fnsize_p: 18;
     --about_left: 50;
-    /*--default_color: magenta;*/
     }
 }
 
@@ -362,7 +367,7 @@
     --techs_title_top: 220;
     --techs_subtitle_top: 292;
     --techs_list_top: 411;
-    --techs_item_width: 84;
+    --techs_item_width: var(--techs_item_widthtgt768);
     --techs_item_height: 57;
     --techs_item_fnsize_p: 12;
     --techs_height: 559;
@@ -378,7 +383,7 @@
     --portfolio_top: 593;
     --portfolio_list_top: 662;
     --portfolio_line_top: 731;
-    /* ---------------------------- Components media queries ---------------------------- */
+    /* ---------------------------- Components media queries 968 ---------------------------- */
     --register_top: var(--register_top_tgt768);
     --profile_top: var(--profile_top_tgt768);
     --regform_top: 307;
@@ -389,7 +394,6 @@
     --notfound_title_top: var(--notfound_top_tgt768);
     --notfound_prg_top: 582;
     --notfound_btn_top: 784;
-    /*--default_color: blue;*/
   }
 }
 
@@ -431,21 +435,22 @@
   --movies_btn_top: 82;
   --list_col_gap: 30;
   --list_row_gap: 36;
-  --card_width: 339;
+  --card_width: var(--card_width_tgt768);
+  --card_width_smooth: calc(var(--card_width_tgt320)*1px + (var(--card_width) - var(--card_width_tgt320))*(100vw - 562px)/768);
+  --card_width_tgt320: 300;
   --card_height: 257;
   --card_img_height: 190;
   --card_title_top: 15;
   --card_title_left: 11;
   --footer_saved_altop: -27;
   --footer_list_top: 131;
-  /* ---------------------------- Components media queries ---------------------------- */
+  /* ---------------------------- Components media queries 768 ---------------------------- */
   --regform_profile_lbltop: 39;
   --profile_btn_topfit: 16;
   --regform_fld_fnsize_p: 14;
   --regform_fld_lnhght_p: 17;
   --notfound_btn_fnsize_p: 14;
   --notfound_btn_lnhght_p: 17;
-  /*--default_color: cyan;*/
   }
 }
 
@@ -453,8 +458,8 @@
   :root {
     --header_fnsize_p: 12;
     --header_lnhght_p: 16;
-    --promo_title_fnsize_p: 36;
-    --promo_title_lnhght_p: 46;
+    --promo_title_fnsize_p: 30;
+    --promo_title_lnhght_p: 38;
     --promo_subtitle_fnsize_p: 13;
     --project_title_fnsize_p: 20;
     --project_title_lnhght_p: 25;
@@ -465,7 +470,9 @@
     --search_input_lnhght_p: 28;
     --filter_label_lnhght_p: 18;
     --card_title_fnsize_p: 13;
-    --default_section_left: 14;
+    --default_section_left: 10;
+    --header_left: 14;
+    --header_right: var(--header_left);
     --header_gap: 20;
     --header_btn_top: 22;
     --header_btn_width: 64;
@@ -474,8 +481,8 @@
     --main_top: 176;
     --main_height: 600;
     --promo_subtitle_fitop: 4;
-    --promo_img_width: 265;
-    --promo_img_height: 260;
+    --promo_img_width: 240;
+    --promo_img_height: 235;
     --about_left: 18;
     --project_top: 73;
     --project_height: 622;
@@ -492,7 +499,25 @@
     --techs_line_top: 119;
     --techs_title_top: 182;
     --techs_subtitle_top: 244;
+    --aboutme_left: 14;
+    --author_line_top: 120;
+    --author_article_top: 170;
+    --author_image_width: 292;
+    --author_image_height: 352;
+    --author_title_align: 64;
+    --author_subtitle_top: 227;
+    --author_paragraph_top: 263;
+    --author_paragraph_width: var(--author_image_width);
+    --author_link_align: 107;
+    --portfolio_top: 893;
+    --portfolio_bot_mrg: 37;
+    --portfolio_list_top: 954;
+    --portfolio_link_height: 28;
+    --portfolio_line_top: 1001;
     --movies_btn_width: 300;
+    --card_width: var(--card_width_tgt320);
+    --card_height: 235;
+    --card_img_height: 168;
     /* ---------------------------- Components media queries 562 ---------------------------- */
     --notfound_title_fnsize_p: 100;
     --notfound_title_lnhght_p: 132;
@@ -507,17 +532,14 @@
     --regform_width: 296;
     --regform_fld_bot: 519;
     --regform_btn_top: 676;
-    /*--default_color: yellow;*/
   }
 }
 
 @media screen and  (max-width: 320px) {
   :root {
-    --header_burger: url(../../images/header/burger_320.png);
+    --header_burger: url(../../images/header/burger_320.svg);
     --page_width: 320;
     --header_fnsize_p: 10;
-    --promo_title_fnsize_p: 30;
-    --promo_title_lnhght_p: 38;
     --project_title_fnsize_p: 18;
     --project_title_lnhght_p: 22;
     --project_subtitle_letter_f: -0.064;
@@ -554,7 +576,7 @@
     --main_top: 144;
     --title_left: 10;
     --promo_title_fitop: 24;
-    --promo_title_len: calc(var(--page_width) - var(--title_left)*2);
+    --promo_title_len: 300;
     --promo_img_width: 210;
     --promo_img_height: 206;
     --promo_btn_altop: -11;
@@ -562,21 +584,6 @@
     --techs_left: 52;
     --techs_bot: calc(var(--techs_height) - var(--techs_list_top) - 4*var(--techs_item_height) - 42);
     --techs_list_top: 326;
-    --aboutme_left: 14;
-    --author_line_top: 120;
-    --author_article_top: 170;
-    --author_image_width: 292;
-    --author_image_height: 352;
-    --author_title_align: 39;
-    --author_subtitle_top: 227;
-    --author_paragraph_top: 263;
-    --author_paragraph_width: var(--author_image_width);
-    --author_link_align: 107;
-    --portfolio_top: 893;
-    --portfolio_bot_mrg: 37;
-    --portfolio_list_top: 954;
-    --portfolio_link_height: 28;
-    --portfolio_line_top: 1001;
     --search_top: 80;
     --search_line_top: 111;
     --search_align_bot: 0;
@@ -584,12 +591,8 @@
     --filter_label_fnsize_p: 11;
     --movies_top: 46;
     --list_row_gap: 20;
-    --card_width: 300;
-    --card_height: 235;
-    --card_img_height: 168;
     --movies_btn_top: 80;
     --movies_btn_width: 240;
-    /*--footer_list_topmrg: 36;*/
     --footer_list_topmrg: 30; /* с 36 на 30 замениили на moves, если возникнет конфликт - сделать модфикатор */
     --footer_saved_altop: -28;
     --footer_gap: 12;
@@ -608,6 +611,5 @@
     --regform_width: 260;
     --regform_profile_width: var(--regform_width);
     --register_btn_topfit: -1;
-    /*--default_color: green;*/
   }
 }

@@ -25,6 +25,11 @@ export default function Register ({frmType = 'register'}) {
     setLoggedMail(email);
     alert(`Register RegForm trace: ${email} & ${password} were registered`);
     navigate(`/${signin}`);
+    /*mestAuth.authorize({email, password}, srvAuthData.signup).then(result => {
+      handleToolTipOpen(true);
+      navigate(`/${srvAuthData.signin}`);
+    }).catch(err => {handleToolTipOpen(false); console.log(`Register: ${err}`)
+    });*/
   }
 
   useEffect(() => { refUser.current.focus() }, []);
@@ -43,4 +48,7 @@ export default function Register ({frmType = 'register'}) {
       </RegForm>
     </div>
   );
- }
+  /*  {handleToolTipOpen}
+      <Header routeLink={`/${signin}`} signCaption={regEnterCaption} />
+  */
+}

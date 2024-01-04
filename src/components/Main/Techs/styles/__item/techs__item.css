@@ -9,6 +9,20 @@
   background-color: var(--techs_item_backcolor);
 }
 
+@media screen and (max-width: 1279px) {
+  .techs__item {
+    max-width: calc(var(--techs_item_width)*1px);
+    min-width: calc(var(--techs_item_widthtgt768)*1px);
+    width: 100%
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .techs__item {
+    width: calc(var(--techs_item_width)*1px);
+  }
+}
+
 @media screen and  (max-width: 320px) {
   .techs__item:nth-of-type(2n+1).techs__item:last-of-type {
     margin-right: auto;

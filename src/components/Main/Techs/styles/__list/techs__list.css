@@ -7,11 +7,16 @@
   column-gap: calc(var(--techs_col_gap)*1px);
 }
 
+@media screen and  (max-width: 767px) {
+  .techs__list {
+    flex-wrap: wrap;
+  }
+}
+
 @media screen and  (max-width: 562px) {
   .techs__list {
     margin-left: calc(var(--techs_left)*1px);
     margin-right: calc(var(--techs_left)*1px);
-    flex-wrap: wrap;
     gap: calc(var(--techs_col_gap)*1px);
   }
 }

@@ -1,14 +1,21 @@
 .searchform__findbtn {
+  padding: 0;
   max-width: calc(var(--search_btn_size)*1px);
   height: calc(var(--search_btn_size)*1px);
   background-color: var(--author_back_color);
   background-image: var(--search_btn_img);
   aspect-ratio: var(--search_btn_aspect);
-  object-position: center;
+  background-repeat: no-repeat;
+  object-position: right;
   border: none;
   cursor: pointer;
 }
 
+.searchform__findbtn:hover {
+  outline: calc(var(--search_btn_hoverln)*1px) solid white;
+  box-sizing: content-box;
+  border-radius: calc(var(--search_btn_size)/2*1px);
+}
 
 @media screen and (max-width: 768px) {
   .searchform__findbtn {

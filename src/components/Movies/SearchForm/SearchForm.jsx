@@ -11,8 +11,8 @@ export default function SearchForm ({frmClass = 'searchform', frmType = '', hand
   return (
     <form className={`${frmClass} ${frmType ? `${frmClass}_type_${frmType}` : ''}`}>
       <div className={`${frmClass}__container`}>
-        <input ref={movieSearchStr} className={`${frmClass}__input`} placeholder='Фильм'/>
-        <button className={`${frmClass}__findbtn`} type='button'
+        <input ref={movieSearchStr} className={`${frmClass}__input`} placeholder='Фильм' required />
+        <button className={`${frmClass}__findbtn`} type='submit'
           onClick={evt => handleSearchClick(evt)}
         />
       </div>

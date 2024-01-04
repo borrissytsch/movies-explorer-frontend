@@ -1,25 +1,6 @@
 .promo__image {
-  /*
-  margin-left: calc((var(--cousteau_img_aleft) + (var(--cousteau_img_width)  - var(--cousteau_avatar_size))/2)*1px);
-  margin-right: calc((var(--cousteau_img_width) - var(--cousteau_avatar_size))/2*1px);
-  margin-top: calc(var(--main_top)*1px);*/
   max-width: calc(var(--promo_img_width)*1px);
   max-height: calc(var(--promo_img_height)*1px);
   aspect-ratio: var(--promo_aspect);
   object-fit: cover;
-  /*border-radius: calc(var(--cousteau_radius)*1px);
-  justify-self: center;
-  align-self: center;*/
 }
-
-/*@media screen and (max-width: 768px) {
-  .promo__image {
-    margin-left: calc((var(--default_section_left) - var(--cousteau_left))*1px);
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .promo__image {
-    margin-left: calc(var(--cousteau_img_align)*1px);
-  }
-}*/

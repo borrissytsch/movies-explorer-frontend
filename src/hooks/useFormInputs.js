@@ -1,4 +1,4 @@
-import /*React,*/ { useState } from 'react';
+import { useState } from 'react';
 export default function useFormInputs(inputValues) {
   const [values, setValues] = useState(inputValues);
   const handleChange = (evt) => {evt.preventDefault();

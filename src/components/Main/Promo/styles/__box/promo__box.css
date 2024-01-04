@@ -12,24 +12,10 @@
     align-items: inherit;
   }
 }
-/*.promo__box:hover {
-  opacity: var(--cousteau_btn_hoveropas);
-}
-
-@media screen and (max-width: 768px) {
-  .promo__box {
-    margin-top: calc((var(--default_head_lnhght_p) - var(--cousteau_box_top) - 4)*1px);
-  }
-}
 
 @media screen and (max-width: 562px) {
   .promo__box {
-    margin-top: calc((var(--default_head_lnhght_p) - var(--cousteau_box_side) + 4)*1px);
+    margin: 0;
+    padding: 0;
   }
 }
-
-@media screen and (max-width: 320px) {
-  .promo__box {
-    margin: 0;
-  }
-}*/

@@ -1,9 +1,17 @@
 .searchform__input {
+  /*max-width: min(var(--search_fld_width)*1px, 85%);*/
+  max-width: 1060px;
+  width: 100%;
   font-size: calc(var(--search_input_fnsize_p)*1px);
   line-height: calc(var(--search_input_lnhght_p)*1px);
   font-weight: var(--default_head_fnwght);
   color: var(--project_caption_color);
   background-color: inherit;
+  border-radius: calc(var(--regform_input_radius)*1px);
   border: none;
   outline: none;
+}
+
+.searchform__input:focus {
+  background-color: #2f2f2f;
 }

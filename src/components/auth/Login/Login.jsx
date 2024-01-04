@@ -5,11 +5,12 @@ import { LoggedMailContext } from '../../../contexts/LoggedMailContext';
 import RegForm from '../RegForm/RegForm';
 import Logo from '../../Logo/Logo';
 
+/*import { mestAuth } from '../../utils/Auth';*/
 import {
   signPageCaptions, authRoutes, authFormIds/*, srvAuthData , userAuthData*/
 } from '../../../utils/constants';
 
-export default function Login () {
+export default function Login (/*login='login'*/) {
   const navigate = useNavigate();
   const [loggedIn, setLoggedIn] = useContext(LoggedInContext);
   const [loggedMail/*, setLoggedMail*/] = useContext(LoggedMailContext);
@@ -22,7 +23,7 @@ export default function Login () {
   function handleRegForm (evt, {email , password}) {
     evt.preventDefault();
     setLoggedIn(true);
-    alert(`Login RegForm trace: ${email} & ${password} entered; LoggedIn & mail contexts are set: ${loggedIn}`);
+    // alert(`Login RegForm trace: ${email} & ${password} entered; LoggedIn & mail contexts are set: ${loggedIn}`);
     navigate('/movies');
   }
 

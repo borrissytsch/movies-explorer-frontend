@@ -1,11 +1,9 @@
 .promo__title {
   max-width: calc(var(--promo_title_len)*1px);
-  display: inline-block;
   font-size: calc(var(--promo_title_fnsize_p)*1px);
   line-height: calc(var(--promo_title_lnhght_p)*1px);
   font-weight: var(--default_text_fnwght);
   white-space: pre-wrap;
-
 }                                                                                                                                                                                         /* border-color:blueviolet; border-style: dashed; */
 
 @media screen and (max-width: 968px) {
@@ -14,13 +12,15 @@
   }
 }
 
-/*@media screen and (max-width: 562px) {
-  .promo__title {  }
-}*/
+@media screen and (max-width: 562px) {
+  .promo__title {  
+    max-width: calc(var(--promo_title_len)*1px);
+    letter-spacing: calc(var(--promo_title_fnsize_p)*var(--project_title_letter_f)*1px);
+  }
+}
 
 @media screen and (max-width: 320px) {
   .promo__title {
-    letter-spacing: calc(var(--promo_title_fnsize_p)*var(--project_title_letter_f)*1px);
     width: calc(var(--promo_title_len)*1px);
   }
 }

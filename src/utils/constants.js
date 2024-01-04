@@ -23,7 +23,6 @@ export const defaultScreenWidth4Match = 768;
 /* React config vars */
 export const projectOffset = getCSSNumVar('--project_top_offset');
 
-
 /* Miscellaneous messaging/captions' consts */
 export const msgSubmitButtonWait = 'Сохранение ...';
 export const captionProfileButton = 'Сохранить';

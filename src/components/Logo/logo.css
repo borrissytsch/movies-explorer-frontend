@@ -3,6 +3,7 @@
   max-width: calc(var(--logo_size)*1px);
   height:calc(var(--logo_size)*1px);
   aspect-ratio: var(--logo_aspect);
+  z-index: 1;
 }
 
 .logo_notlogged {

@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import imgCheckBox from '../../../images/components/movies/checkbox_toggle.png';
+import imgCheckBoxGray from '../../../images/components/movies/checkbox_toggle_gray.png';
 export default function FilterCheckbox ({checkBoxClass = 'filtercheckbox', checkBox = null}) {
   const [checkBoxState, setCheckBoxState] = useState(checkBox);
 
   return (
     <div className={checkBoxClass}>
-      <button className={`${checkBoxClass}__button`} type='button'
+      <button className={`${checkBoxClass}__button 
+        ${checkBoxClass}__button_type_${checkBoxState ? 'set' : 'unset'}`} type='button'
         onClick={evt => setCheckBoxState(!checkBoxState)}>
         <img className={`${checkBoxClass}__toggle
           ${checkBoxClass}__toggle_type_${checkBoxState ? 'set' : 'unset'}`}
-        src={imgCheckBox} alt="Переключатель" />
+        src={checkBoxState ? imgCheckBox : imgCheckBoxGray } alt="Переключатель" />
       </button>
       <label className={`${checkBoxClass}__label`}>Короткометражки</label>
     </div>

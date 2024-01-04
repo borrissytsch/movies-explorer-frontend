@@ -14,7 +14,9 @@ export function Profile ({frmType='profile', theme='dark'}) {
   const [loggedIn, setLoggedIn] = useContext(LoggedInContext);
   const [loggedMail, setLoggedMail] = useContext(LoggedMailContext);
   const [currUser, setCurrUser] = useContext(CurrentUserContext);
-  const { tooltipErrCaption } = signPageCaptions;
+  const {
+    /*inTitle, btnEnterCaption,*/ tooltipErrCaption, /*regNotCaption, lnkRegCaption*/
+  } = signPageCaptions;
   // const {signup} = authRoutes;
   const {signin: formId} = authFormIds;
   const regform = 'regform';

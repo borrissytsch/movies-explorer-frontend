@@ -20,3 +20,12 @@ export default function AboutProject ({about = 'aboutproject', ref}) {
     </About>
   );
 }
+
+/*, {useRef, useImperativeHandle, forwardRef, useContext }*/
+//import {AboutProjectRefContext} from '../../../contexts/AboutProjectRefContext';
+/*const [aboutProjectOffset, setAboutProjectOffset] = useContext(AboutProjectRefContext);
+const prjOffset = () => {setAboutProjectOffset(722); alert(aboutProjectOffset)};
+useImperativeHandle(ref, () => ({
+  prjOffset
+}));*/
+// export default forwardRef(AboutProject);

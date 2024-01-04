@@ -1,10 +1,11 @@
 .aboutme__image {
   max-width: calc(var(--author_image_width)*1px);
   height: calc(var(--author_image_height)*1px);
+  border-radius: calc(var(--author_image_radius)*1px);
   aspect-ratio: var(--author_img_aspect);
 }
 
-@media screen and  (max-width: 320px) {
+@media screen and  (max-width: 562px) {
   .aboutme__image {
     order: -1;
   }

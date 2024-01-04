@@ -1,5 +1,11 @@
 # movies-explorer-frontend
-Front part of D. Zabolotnov diploma project 4 Yandex practicum web-dev course
+Front part of diploma project 4 Yandex practicum web-dev course
+
+---
+
+В настоящий момент проект в стадии разработки, здесь вторая часть проекта с вёрсткой макета и портированием разметки в js.
+
+Проект реализован Д. Заболотновым. Ревью кода выполнено Д. Сугоняевым.
 
 ---
 

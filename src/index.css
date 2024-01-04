@@ -26,6 +26,8 @@
 @import url(./components/Main/About/styles/__title/about__title.css);
 @import url(./components/Main/About/styles/__line/about__line.css);
 @import url(./components/Main/AboutProject/aboutproject.css);
+/*@import url(./components/Main/AboutProject/styles/__bounds/aboutproject__bounds.css);
+*/
 @import url(./components/Main/AboutProject/styles/__line/aboutproject__line.css);
 @import url(./components/Main/AboutProject/styles/__article/aboutproject__article.css);
 @import url(./components/Main/AboutProject/styles/__title/aboutproject__title.css);
@@ -64,6 +66,7 @@
 @import url(./components/Main/Portfolio/styles/__list/portfolio__list.css);
 @import url(./components/Main/Portfolio/styles/__item/portfolio__item.css);
 @import url(./components/Main/Portfolio/styles/__link/portfolio__link.css);
+@import url(./components/Main/Portfolio/styles/__link-ptr/portfolio__link-ptr.css);
 @import url(./components/Movies/movies.css);
 @import url(./components/Movies/Preloader/Preloader.css);
 @import url(./components/Movies/styles/__button/movies__button.css);
@@ -74,6 +77,8 @@
 @import url(./components/Movies/SearchForm/styles/__findbtn/searchform__findbtn.css);
 @import url(./components/Movies/FilterCheckbox/filtercheckbox.css);
 @import url(./components/Movies/FilterCheckbox/styles/__button/filtercheckbox__button.css);
+@import url(./components/Movies/FilterCheckbox/styles/__button/_type_set/filtercheckbox__button_type_set.css);
+@import url(./components/Movies/FilterCheckbox/styles/__button/_type_unset/filtercheckbox__button_type_unset.css);
 @import url(./components/Movies/FilterCheckbox/styles/__toggle/filtercheckbox__toggle.css);
 @import url(./components/Movies/FilterCheckbox/styles/__toggle/_type_set/filtercheckbox__toggle_type_set.css);
 @import url(./components/Movies/FilterCheckbox/styles/__toggle/_type_unset/filtercheckbox__toggle_type_unset.css);
@@ -104,6 +109,7 @@
 @import url(./components/Footer/styles/__list/_type_notlined/footer__list_type_notlined.css);
 @import url(./components/Footer/styles/__item/footer__item.css);
 @import url(./components/Footer/styles/__item/_type_left/footer__item_type_left.css);
+/* components' css */
 @import url(./components/NotFound/notfound.css);
 @import url(./components/NotFound/styles/__title/notfound__title.css);
 @import url(./components/NotFound/styles/__paragraph/notfound__paragraph.css);

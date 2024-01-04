@@ -1,6 +1,6 @@
 .promo__subtitle {
   margin: 0;
-  padding-top: calc(var(--promo_subtitle_fitop)*1px); /* Убраьт на 1279, только для 1280: на 968 будет < 0 */
+  padding-top: calc(var(--promo_subtitle_fitop)*1px);
   max-width: calc(var(--promo_subtitle_len)*1px);
   font-size: calc(var(--promo_subtitle_fnsize_p)*1px);
   line-height: calc(var(--promo_subtitle_lnhght_p)*1px);
@@ -19,10 +19,3 @@
     text-align: inherit;
   }
 }
-
-/*@media screen and (max-width: 320px) {
-  .promo__subtitle {
-    margin-top: -6px;
-    justify-self: center;
-  }
-}*/

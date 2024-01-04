@@ -7,8 +7,8 @@ import Navigation from '../Navigation/Navigation';
 import Burger from '../Burger/Burger';
 import { authRoutes } from '../../utils/constants';
 import { scrWidthMatch, setBurgerPageBackColor } from '../../utils/miscutils';
-import imgHeaderProfile from '../../images/header/profile.png';
-import imgHeaderProfileDark from '../../images/header/profile_dark.png';
+import imgHeaderProfile from '../../images/header/profile.svg';
+import imgHeaderProfileDark from '../../images/header/profile_dark.svg';
 
 function Header({ header = 'header', theme = null, type = null }) {
   const navigate = useNavigate();
@@ -24,6 +24,15 @@ function Header({ header = 'header', theme = null, type = null }) {
       setBurgerPageBackColor();
     } }, checkScrWidthInterval_ms);
   }, [burgerFlag]);
+  /*{routeLink, signCaption, startApp, ...headerFields}
+  const loggedIn = useContext(LoggedInContext);
+  function handleLinkClick (evt) {
+    if (loggedIn) {
+      localStorage.removeItem('token');
+      startApp(false);
+    }
+  }
+*/
 
   function handleProfileBtnClick (evt, navLink = `/${profile}`, burgerFlag = true) {
     if (scrWidthMatch()) {
@@ -58,5 +67,11 @@ function Header({ header = 'header', theme = null, type = null }) {
     </header>
   );
 }
+/*
+      <div className="header__signs">
+        {headerFields.children}
+        <NavLink to={routeLink} className={loggedIn ? "header__exit" : "header__link"} onClick={handleLinkClick}>{signCaption}</NavLink>
+      </div>
 
+*/
 export default Header;

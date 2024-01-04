@@ -13,7 +13,7 @@ export default function Promo ({promo = 'promo'}) {
   )};
 
   return (
-    <section className={promo} >
+    <section className={promo} /*onKeyDown={onClose}*/>
       <div className={`${promo}__box`}>
         <div className={`${promo}__head`}>
           <h1 className={`${promo}__title`}>Учебный проект студента факультета                    Веб&#8209;

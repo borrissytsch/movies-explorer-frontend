@@ -7,6 +7,7 @@ export function SavedMovies ({ moviesClass = 'savedmovies', movieType = 'saved',
   cardBtnType = 'remove' }
 ) {
 
+
   return (
     <Movies moviesClass={moviesClass} movieType={movieType} 
       movieBtnClass={movieBtnClass} isBtnActive={false} cards={cards} cardBtnType={cardBtnType}
